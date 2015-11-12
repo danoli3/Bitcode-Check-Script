@@ -33,6 +33,7 @@ echo "========================"
 
 # bitcodeCheck
 # Param1: archive to check for bitcode
+# Param2: any string to slow the checking down
 bitcodeCheck(){
 
 if [ "$1" == "" ]
@@ -58,15 +59,16 @@ else
 fi
 echo "------------------"
 
+# 
 if [ "$2" != "" ]; then
     sleep 1 
 fi
 
 }
 
-# --------------- Edit here
+# --------------- Example if you want to add files to check here:
 
-bitcodeCheck "../openFrameworks/libs/boost/lib/tvos/boost_system.a"
+# bitcodeCheck "openFrameworks/libs/boost/lib/tvos/boost_system.a"
 
 echo "========================"
 
