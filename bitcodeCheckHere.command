@@ -79,7 +79,7 @@ bitcodeCheckHere() {
 # bitcodeCheck "openFrameworks/libs/boost/lib/tvos/boost_system.a"
 
 # or just call the follow to check all archives in a directory
-# bitcodeCheckHere 
+bitcodeCheckHere 
 
 echo "==================================================="
 
